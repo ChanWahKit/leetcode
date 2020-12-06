@@ -1,10 +1,10 @@
-package code;
+package code.杨辉三角118;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class triangleOffical {
-    class Solution {
+public class TriangleOffical {
+    static class Solution {
         public List<List<Integer>> generate(int numRows) {
             List<List<Integer>> ret = new ArrayList<List<Integer>>();
             for (int i = 0; i < numRows; ++i) {

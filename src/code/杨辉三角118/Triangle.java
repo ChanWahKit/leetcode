@@ -1,4 +1,4 @@
-package code;
+package code.杨辉三角118;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 杨辉三角生成，第一位和最后一位永远是1，第二层起每一层的第n（length>n>1）位都是上一层第n-1位+第n位之和
  */
-public class triangle {
+public class Triangle {
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> result = new ArrayList<>();
         if (numRows == 0) return result;
@@ -32,9 +32,9 @@ public class triangle {
     }
 
     public static void main(String[] args) {
-        System.out.println(new triangle().generate(1) + "\n");
-        System.out.println(new triangle().generate(2) + "\n");
-        System.out.println(new triangle().generate(3) + "\n");
-        System.out.println(new triangle().generate(4));
+        System.out.println(new Triangle().generate(1) + "\n");
+        System.out.println(new Triangle().generate(2) + "\n");
+        System.out.println(new Triangle().generate(3) + "\n");
+        System.out.println(new Triangle().generate(4));
     }
 }
