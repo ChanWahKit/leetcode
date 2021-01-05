@@ -16,17 +16,14 @@ public class Triangle {
             List<Integer> rowList = new ArrayList<>();
             //第一位都是1
             rowList.add(1);
-            if (i == 1) {
-                result.add(rowList);
-            }
             //当前层级为数组长度-1，上一层应该是-2
             if (i > 1) {
                 for (int j = 1; j < i - 1; j++) {
                     rowList.add(result.get(i - 2).get(j - 1) + result.get(i - 2).get(j));
                 }
                 rowList.add(1);
-                result.add(rowList);
             }
+            result.add(rowList);
         }
         return result;
     }
