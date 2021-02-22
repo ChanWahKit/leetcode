@@ -1,6 +1,14 @@
-package code.省份数量547;
+package code;
 
-public class FindCircleNum {
+/**
+ * @description:
+ * @author: chanwahkit
+ * @time: 2021/2/22 18:22
+ * @level: medium
+ * @solution: 深度优先搜索，通过visit数组标记端点是否已经遍历
+ */
+
+public class Solution547_FindCircleNum {
     public int findCircleNum(int[][] isConnected) {
         //端点数
         int point = isConnected.length;
@@ -22,10 +30,5 @@ public class FindCircleNum {
                 dfs(isConnected, visit, end);
             }
         }
-    }
-
-    public static void main(String[] args) {
-        int[][] isConnect = {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}};
-        System.out.println(new FindCircleNum().findCircleNum(isConnect));
     }
 }

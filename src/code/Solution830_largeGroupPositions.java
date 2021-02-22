@@ -1,9 +1,10 @@
-package code.较大分组的位置830;
+package code;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * @description:
  * 在一个由小写字母构成的字符串 s 中，包含由一些连续的相同字符所构成的分组。
  *
  * 例如，在字符串 s = "abbxxxxzyy"中，就含有 "a", "bb", "xxxx", "z" 和 "yy" 这样的一些分组。
@@ -11,12 +12,13 @@ import java.util.List;
  * 分组可以用区间 [start, end] 表示，其中 start 和 end 分别表示该分组的起始和终止位置的下标。上例中的 "xxxx" 分组用区间表示为 [3,6] 。
  *
  * 我们称所有包含大于或等于三个连续字符的分组为 较大分组 。
- *
- * 来源：力扣（LeetCode）
- * 链接：https://leetcode-cn.com/problems/positions-of-large-groups
- * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+ * @author: chanwahkit
+ * @time: 2021/2/22 18:25
+ * @level: easy
+ * @solution:
  */
-public class largeGroupPositions {
+
+public class Solution830_largeGroupPositions {
     public List<List<Integer>> largeGroupPositions(String s) {
         int count = 1;
         char temp = s.charAt(0);
@@ -43,9 +45,5 @@ public class largeGroupPositions {
         }
         System.out.println(largeGroupPositions);
         return largeGroupPositions;
-    }
-
-    public static void main(String[] args) {
-        new largeGroupPositions().largeGroupPositions("eeee");
     }
 }

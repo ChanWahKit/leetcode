@@ -1,4 +1,4 @@
-package code.二叉树系列;
+package code;
 
 public class TreeNode {
     int val;

@@ -1,4 +1,4 @@
-package code.二叉树系列;
+package code;
 
 /**
  * @description:
@@ -6,11 +6,12 @@ package code.二叉树系列;
  *
  * 你需要将他们合并为一个新的二叉树。合并的规则是如果两个节点重叠，那么将他们的值相加作为节点合并后的新值，否则不为 NULL 的节点将直接作为新二叉树的节点。
  * @author: chanwahkit
- * @time: 2021/2/7 14:48
- * @solve: 自上而下，以第一棵树root1作为最终结果，如果左子树为空则将root2的相应树枝剪切到root1上，右子树也是同样
+ * @time: 2021/2/22 21:26
+ * @level: easy
+ * @solution: 自上而下，以第一棵树root1作为最终结果，如果左子树为空则将root2的相应树枝剪切到root1上，右子树也是同样
  */
 
-public class MergeTrees {
+public class Solution617_MergeTrees {
     public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {
         if(root1==null||root2==null){
             return root1==null?root2:root1;

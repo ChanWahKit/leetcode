@@ -1,9 +1,14 @@
-package code.二叉树系列;
+package code;
 
 /**
- * 226翻转二叉树，递归转换
+ * @description: 翻转二叉树，递归转换
+ * @author: chanwahkit
+ * @time: 2021/2/22 21:13
+ * @level: easy
+ * @solution:
  */
-public class InvertTree {
+
+public class Solution226__InvertTree {
     public TreeNode invertTree(TreeNode root) {
         if(root == null){
             return null;

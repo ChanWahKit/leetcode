@@ -1,9 +1,14 @@
-package code.设计Goal解析器5617;
+package code;
 
 /**
- * 只需按部就班判断当前字符和下一个字符
+ * @description:
+ * @author: chanwahkit
+ * @time: 2021/2/22 18:28
+ * @level: easy
+ * @solution: 只需按部就班判断当前字符和下一个字符
  */
-public class Interpret {
+
+public class Solution5617_Interpret {
     public String interpret(String command) {
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < command.length(); i++) {
@@ -24,11 +29,5 @@ public class Interpret {
             }
         }
         return result.toString();
-    }
-
-    public static void main(String[] args) {
-        String result = new Interpret().interpret("(al)G(al)()()G");
-        System.out.println(result);
-        assert result.equals("alGalooG");
     }
 }

@@ -1,9 +1,14 @@
-package code.二叉树系列;
+package code;
 
 /**
- * 116填充每个节点的下一个右侧节点指针
+ * @description: 填充每个节点的下一个右侧节点指针
+ * @author: chanwahkit
+ * @time: 2021/2/22 18:33
+ * @level: medium
+ * @solution:
  */
-public class ConnectNode {
+
+public class Solution116_ConnectNode {
     public TreeNode connect(TreeNode root) {
         if(root==null){
             return null;
