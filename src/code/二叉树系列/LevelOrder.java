@@ -24,9 +24,25 @@ import java.util.List;
 
 public class LevelOrder {
     public List<List<Integer>> levelOrder(TreeNode root) {
-        LinkedList list = new LinkedList();
-        list.offer();
-        list.peek();
-        return null;
+        LinkedList<TreeNode> assist = new LinkedList();
+        List<List<Integer>> result = new ArrayList<>();
+        if(root!=null){
+            assist.add(root);
+        }
+        while (assist.size()!=0){
+            List<Integer> temp = new ArrayList<>();
+            for (int i = assist.size()-1; i >= 0; i--) {
+                TreeNode node = assist.poll();
+                temp.add(node.val);
+                if(node.left!=null){
+                    assist.add(node.left);
+                }
+                if(node.right!=null){
+                    assist.add(node.right);
+                }
+            }
+            result.add(temp);
+        }
+        return result;
     }
 }
