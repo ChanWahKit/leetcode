@@ -16,6 +16,8 @@ package code;
  * @time: 2021/2/23 10:28
  * @level: easy
  * @solution: 前序遍历的第一位可以确定为根节点，中序遍历的两侧可以确定为左右子树，前序遍历的切分可以根据中序遍历左子树的长度切分
+ * 前序=root+root.left+leftSize+root.right
+ * 中序=root.left+leftSize+root+root.right
  */
 
 public class POSolution07_BuildTree {
