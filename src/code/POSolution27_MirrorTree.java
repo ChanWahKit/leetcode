@@ -24,7 +24,7 @@ package code;
  * @solution:
  */
 
-public class POSolution27_mirrorTree {
+public class POSolution27_MirrorTree {
     public TreeNode mirrorTree(TreeNode root) {
         if(root==null){
             return null;
